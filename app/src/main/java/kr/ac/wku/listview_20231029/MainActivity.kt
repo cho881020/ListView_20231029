@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         mStudentList.add(  StudentData("이학생", 2000, "010-2222-3333")  )
         mStudentList.add(  StudentData("최학생", 1998, "010-3333-4444")  )
         mStudentList.add(  StudentData("박학생", 2004, "010-4444-5555")  )
+        mStudentList.add(  StudentData("정학생", 2002)  )
 
 //        어댑터 변수도 객체 생성
 
