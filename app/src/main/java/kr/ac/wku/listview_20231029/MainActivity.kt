@@ -52,6 +52,26 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+//        한명의 학생을 오래 클릭하면 => 해당 학생 삭제
+
+        binding.studentListView.setOnItemLongClickListener { adapterView, view, position, l ->
+
+            // 오래 클릭된 학생 => (목록에서) 삭제
+
+            mStudentList.removeAt(position)  // 내용물 변경 발생
+
+            // 어댑터에게 통보
+            mStdAdapter.notifyDataSetChanged()
+
+
+            // LongClick이벤트는 Bool 타입의 리턴값을 받도록 되어있음.
+
+
+            return@setOnItemLongClickListener true
+
+        }
+
+
 
 
     }
